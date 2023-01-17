@@ -8,6 +8,7 @@ export class MailService {
 
   async sendVerification(user: User, token: string) {
     const activitionLink = `http://localhost:3000/signup/verification?token=${token}`;
+    console.log(token);
     const res = await this.mailerService.sendMail({
       to: user.email,
       subject: 'Account Verification',

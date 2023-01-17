@@ -174,6 +174,8 @@ export class AuthService {
       id: user.id,
     };
     const verificationToken = this.jwtService.sign(jwtPayload);
+    console.log(verificationToken);
     await this.mailService.sendVerification(user, verificationToken);
+    console.log("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
   }
 }
