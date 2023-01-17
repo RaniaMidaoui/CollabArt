@@ -42,14 +42,15 @@ export class AuthService {
         ...dto,
         password: hashedPassword,
         salt,
-        isActive: true,
+        isActive: false,
       });
       console.log(user);
 
       await this.userRepo.save(user);
       console.log("------------------------------------------------------------");
 
-      /*await this.sendVerificationEmail(user);*/
+      /*await this.sendVerificationEmail(user);
+      console.log("------------------------------------------------------------");*/
 
       return user;
     } catch (e) {

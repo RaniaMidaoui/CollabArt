@@ -46,7 +46,7 @@ export class SubjectController {
     return this.subjectService.findOne(id);
   }
 
-  @Post('create')
+  @Post()
   @UseGuards(JwtAuthGuard, PoliciesGuard)
   @CheckPolicies(CreateSubjectPolicyHandler)
   create(

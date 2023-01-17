@@ -49,7 +49,8 @@ export class AuthService {
       await this.userRepo.save(user);
       console.log("------------------------------------------------------------");
 
-      /*await this.sendVerificationEmail(user);*/
+      /*await this.sendVerificationEmail(user);
+      console.log("------------------------------------------------------------");*/
 
       return user;
     } catch (e) {
