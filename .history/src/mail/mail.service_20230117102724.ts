@@ -12,11 +12,7 @@ export class MailService {
     const res = await this.mailerService.sendMail({
       to: user.email,
       subject: 'Account Verification',
-      template: './confirmation',
-      context: { // filling curly brackets with content
-        name: user.firstName,
-        activitionLink,
-      },
+      html: 'Click this link <a href="${activitionLink}"> to verify account</a>',
     });
     console.log("2nd step");
     return res;
@@ -27,7 +23,7 @@ export class MailService {
     const res = await this.mailerService.sendMail({
       to: email,
       subject: 'Reset Password',
-      html: `Click this <a href="${resetLink}">link</a> to proceed with the password reset`,
+      html: 'Click this <a href="${resetLink}">link</a> to proceed with the password reset',
     });
     return res;
   }

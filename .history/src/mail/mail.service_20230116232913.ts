@@ -12,11 +12,7 @@ export class MailService {
     const res = await this.mailerService.sendMail({
       to: user.email,
       subject: 'Account Verification',
-      template: './confirmation',
-      context: { // filling curly brackets with content
-        name: user.firstName,
-        activitionLink,
-      },
+      html: `Click this link <a href="${activitionLink}"> to verify account</a>`,
     });
     console.log("2nd step");
     return res;
