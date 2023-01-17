@@ -10,12 +10,6 @@ async function bootstrap() {
   dotenv.config();
   app.useGlobalPipes(new ValidationPipe());
 
-  app.enableCors({
-    origin: true,
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    credentials: true,
-  });
-  
   app.useGlobalInterceptors(new ClassSerializerInterceptor(app.get(Reflector)));
 
   const documentBuilderConfig = new DocumentBuilder()

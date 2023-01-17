@@ -11,6 +11,7 @@ export class MailService {
     console.log(token);
     const res = await this.mailerService.sendMail({
       to: user.email,
+      from: 'collabart@noreply.com',
       subject: 'Account Verification',
       template: './confirmation',
       context: { // filling curly brackets with content
