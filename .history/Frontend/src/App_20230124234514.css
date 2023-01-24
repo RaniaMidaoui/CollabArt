@@ -106,7 +106,7 @@ nav ul li {
 }
 .Courses {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100%;
   margin: 50px auto;
   padding: 50px 0 0;
@@ -123,7 +123,7 @@ nav ul li {
   font-size: 10.5vw;
 }
 .Courses .card {
-  width: 30%;
+  width: 40%;
   border-radius: 15px;
   position: relative;
   transform: scale(0.8);
@@ -143,11 +143,11 @@ nav ul li {
   margin: 25px 0;
 }
 .Courses .card .card_header h2 {
-  font-size: 35px;
+  font-size: 30px;
   color: #836d65;
 }
 .Courses .card .card_header p {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   color: #91827d;
   margin: 8px 0;

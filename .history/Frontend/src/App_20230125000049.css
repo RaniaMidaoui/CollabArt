@@ -143,7 +143,7 @@ nav ul li {
   margin: 25px 0;
 }
 .Courses .card .card_header h2 {
-  font-size: 35px;
+  font-size: 34px;
   color: #836d65;
 }
 .Courses .card .card_header p {
@@ -162,7 +162,7 @@ nav ul li {
   vertical-align: top;
 }
 .Courses .card:hover {
-  background-color: #7cc7b8;
+  background-color: #c5e0db;
   transform: scale(1.0);
   cursor: pointer;
 }

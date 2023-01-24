@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import styles from "./Navbar.module.css";
 import img from './header_logo.png'
 
-const Navbar = ({ hamActive, setHamActive }) => {
+const NavbarHome = ({ hamActive, setHamActive }) => {
   const logo = img;
   const handleClick = () => {
     setHamActive(!hamActive);
@@ -25,22 +25,17 @@ const Navbar = ({ hamActive, setHamActive }) => {
         <div className={`${styles.navRight} center`}>
           <div className={styles.navLinksWrapper}>
             <div className={styles.verticalLine}> </div>
-            <a href="/signin" className={`${styles.nav} center`}>
+            <a href="/subjects" className={`${styles.nav} center`}>
               Subjects
             </a>
-            <a href="/signin" className={`${styles.nav} center`}>
+            <a href="/instructors" className={`${styles.nav} center`}>
               Instructors
             </a>
-            <a href="/signin" className={`${styles.nav} center`}>
+            <a href="/courses" className={`${styles.nav} center`}>
+              MyCourses
+            </a>
+            <a href="/help" className={`${styles.nav} center`}>
               Help
-            </a>
-          </div>
-          <div>
-            <a href="/signin" className={styles.login}>
-              Log in
-            </a>
-            <a href="/signup">
-              <button className={styles.signup}>Sign Up</button>
             </a>
           </div>
         </div>
@@ -48,4 +43,4 @@ const Navbar = ({ hamActive, setHamActive }) => {
     </nav>
   );
 };
-export default Navbar;
+export default NavbarHome;

@@ -129,7 +129,7 @@ nav ul li {
   transform: scale(0.8);
   transition: all 0.3s ease-in-out;
   margin-bottom: 50px;
-  background-color: #b9d0ca;
+  background-color: #d6e3df;
 }
 .Courses .card .card_img {
   margin-top: 5vw;
@@ -143,7 +143,7 @@ nav ul li {
   margin: 25px 0;
 }
 .Courses .card .card_header h2 {
-  font-size: 35px;
+  font-size: 3px;
   color: #836d65;
 }
 .Courses .card .card_header p {

@@ -117,13 +117,13 @@ nav ul li {
 }
 .Courses h3 {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 10;
+  top: 10;
   color: white;
   font-size: 10.5vw;
 }
 .Courses .card {
-  width: 30%;
+  width: 40%;
   border-radius: 15px;
   position: relative;
   transform: scale(0.8);
@@ -143,11 +143,11 @@ nav ul li {
   margin: 25px 0;
 }
 .Courses .card .card_header h2 {
-  font-size: 35px;
+  font-size: 30px;
   color: #836d65;
 }
 .Courses .card .card_header p {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   color: #91827d;
   margin: 8px 0;
@@ -162,8 +162,8 @@ nav ul li {
   vertical-align: top;
 }
 .Courses .card:hover {
-  background-color: #7cc7b8;
-  transform: scale(1.0);
+  background-color: lightblue;
+  transform: scale(1.1);
   cursor: pointer;
 }
 .Courses .card:hover .btn {

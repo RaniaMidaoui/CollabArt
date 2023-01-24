@@ -123,13 +123,14 @@ nav ul li {
   font-size: 10.5vw;
 }
 .Courses .card {
-  width: 30%;
+  width: 40%;
   border-radius: 15px;
+  flex-direction: column;
+  color: white;
   position: relative;
   transform: scale(0.8);
   transition: all 0.3s ease-in-out;
   margin-bottom: 50px;
-  background-color: #b9d0ca;
 }
 .Courses .card .card_img {
   margin-top: 5vw;
@@ -143,13 +144,13 @@ nav ul li {
   margin: 25px 0;
 }
 .Courses .card .card_header h2 {
-  font-size: 35px;
+  font-size: 30px;
   color: #836d65;
 }
 .Courses .card .card_header p {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
-  color: #91827d;
+  color: rgb(181, 59, 59);
   margin: 8px 0;
 }
 .Courses .card .card_header .price {
@@ -162,8 +163,8 @@ nav ul li {
   vertical-align: top;
 }
 .Courses .card:hover {
-  background-color: #7cc7b8;
-  transform: scale(1.0);
+  background-color: lightblue;
+  transform: scale(1.1);
   cursor: pointer;
 }
 .Courses .card:hover .btn {

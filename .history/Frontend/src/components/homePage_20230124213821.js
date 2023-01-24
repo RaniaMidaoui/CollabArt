@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar/Navbar";
+import NavbarHome from "../components/NavbarHome/NavbarHome";
 import NavbarResponsive from "./NavbarResponsive/NavbarResponsive";
 import Hero from "../components/Hero/Hero";
 import Features from "../components/Features/Features";
@@ -10,7 +10,7 @@ const DefaultPage = () => {
   
     return (
       <div className="DefaultPage">
-        <Navbar hamActive={hamActive} setHamActive={setHamActive} />
+        <NavbarHome hamActive={hamActive} setHamActive={setHamActive} />
         <NavbarResponsive hamActive={hamActive} />
         <Hero />
         <Features />
