@@ -1,6 +1,8 @@
-  body{
-    background-image: "./backgroud.js";
+
+  .App {
+    background-image: "C:\Users\hp\Downloads\CollabArt-master\CollabArt-master\Frontend\public\background.jpg";
   }
+  
   .Auth-form-container {
     display: flex;
     justify-content: center;
@@ -51,14 +53,20 @@
     color: #121212;
   }
   
+  #zero-state:before {
+    display: -webkit-box;
+    margin-bottom: 1rem ;
+    content: url('C:\Users\hp\Downloads\CollabArt-master\CollabArt-master\Frontend\public\logo.png');
+  }
+
   #zero-links {
     margin: 2rem auto;
     text-align: center;
-    color: #836d65;
+    color: #3f3f17ba;
   }
   
   #zero-links a {
-    color: #836d65;
+    color: #3f3f17ba;
   } 
   #zero-links a:hover {
     color: #000000;

@@ -68,7 +68,7 @@ return (
                     <div className="text-center">
                         Set your new password
                     </div>
-                    <br></br>
+
                     <div className="form-group mt-3">
                         <label>Password:  </label>
                         <input
@@ -80,7 +80,6 @@ return (
                             onChange={(e) => inputChangeHandler(e)}
                         />
                     </div>
-                    <br></br>
                     <div className="d-grid gap-2 mt-3">
                         <button type="submit" className="btn btn-primary" disabled={isLoading}>
                             {isLoading

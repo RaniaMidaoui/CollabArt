@@ -49,7 +49,7 @@ export default function ForgotPassword() {
                         </div>
                         <br></br>
                         <div className="form-group mt-3">
-                            <label>Email address:  </label>
+                            <label>Email address</label>
                             <input
                                 name="email"
                                 type="email"
@@ -69,8 +69,8 @@ export default function ForgotPassword() {
                             </button>
                         </div>
                         <br />
-                        <div className="link-primary">
-                            <Link to="/signin" >Go back!</Link>
+                        <div className="text-center">
+                            Didn’t request a password reset? <Link to="/auth" >Go back!</Link>
                         </div>
                     </div>
                 </form>

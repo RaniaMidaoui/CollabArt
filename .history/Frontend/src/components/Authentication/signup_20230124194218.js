@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./authentication.module.css";
 import  Alert from "react-bootstrap/Alert";
 
 import { createUser } from "../../services/auth.service";
@@ -45,16 +46,12 @@ export function Singup(props) {
                         <h3 className="Auth-form-title">Sign up</h3>
                         <div className="text-center">
                             Already registered?{" "}
-                            <a href="/signin">
-                                <span className="link-primary" onClick={props.changeAuthMode}>
-                                    Sign In
-                                </span>
-                            </a>
-                        <br></br>
-                        <br></br>
+                            <span className="link-primary" onClick={props.changeAuthMode}>
+                                Sign In
+                            </span>
                         </div>
                         <div className="form-group mt-3">
-                            <label>First Name:  </label>
+                            <label>First Name</label>
                             <input
                                 name="First Name"
                                 type="text"
@@ -64,7 +61,7 @@ export function Singup(props) {
                             />
                         </div>
                         <div className="form-group mt-3">
-                            <label>Last Name:  </label>
+                            <label>Last Name</label>
                             <input
                                 name="Last Name"
                                 type="text"
@@ -74,7 +71,7 @@ export function Singup(props) {
                             />
                         </div>
                         <div className="form-group mt-3">
-                            <label>Email address:  </label>
+                            <label>Email address</label>
                             <input
                                 name="email"
                                 type="email"
@@ -85,7 +82,7 @@ export function Singup(props) {
                             />
                         </div>
                         <div className="form-group mt-3">
-                            <label>Password:  </label>
+                            <label>Password</label>
                             <input
                                 name="password"
                                 type="password"
@@ -97,7 +94,7 @@ export function Singup(props) {
                             />
                         </div>
                         <div className="form-group mt-3">
-                            <label>Verify Password:  </label>
+                            <label>Verify Password</label>
                             <input
                                 name="password"
                                 type="password"
@@ -109,14 +106,12 @@ export function Singup(props) {
                             />
                         </div>
                         <div className="form-group mt-3" >
-                            <label>Role:  </label>
+                            <label>Role</label>
                             <select>
                                 <option value="instructor">Instructor</option>
                                 <option selected value="student">Student</option>
                             </select>
                         </div>
-                        <br></br>
-                        <br></br>
                         <div className="d-grid gap-2 mt-3">
                             <button type="submit" className="btn btn-primary" disabled={isLoading}>
                                 {isLoading ?

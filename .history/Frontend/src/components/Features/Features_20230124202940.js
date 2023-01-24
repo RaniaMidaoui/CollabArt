@@ -29,7 +29,7 @@ const Features = () => {
           })}
         </div>
       </div>
-      <a href="/signin">
+      <a href="/signup">
         <button className={styles.Btn}>Start learning</button>
       </a>
     </div>

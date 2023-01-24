@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import "./App.css";
+import "App.css";
 
 // Components import
 import ForgotPassword from "./components/Authentication/forgotPassword";

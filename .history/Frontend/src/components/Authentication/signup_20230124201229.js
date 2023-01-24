@@ -45,11 +45,9 @@ export function Singup(props) {
                         <h3 className="Auth-form-title">Sign up</h3>
                         <div className="text-center">
                             Already registered?{" "}
-                            <a href="/signin">
-                                <span className="link-primary" onClick={props.changeAuthMode}>
-                                    Sign In
-                                </span>
-                            </a>
+                            <span className="link-primary" onClick={props.changeAuthMode} href="/signin">
+                                Sign In
+                            </span>
                         <br></br>
                         <br></br>
                         </div>

@@ -44,11 +44,9 @@ export function Signin(props) {
                         <h3 className="Auth-form-title">Sign In</h3>
                         <div className="text-center">
                             Not registered yet?{" "}
-                            <a href="/signup">
-                                <span className="link-primary" onClick={props.changeAuthMode}>
-                                    Sign Up
-                                </span>
-                            </a>
+                            <span className="link-primary" onClick={props.changeAuthMode}>
+                                Sign Up
+                            </span>
                         </div>
                         <br></br>
                         <br></br>
@@ -84,8 +82,8 @@ export function Signin(props) {
                                 }
                             </button>
                         </div>
-                        <p className="link-primary">
-                            <Link to="/forgotpassword">Forgot password?</Link>
+                        <p className="text-center mt-2">
+                            Forgot <Link to="/forgotpassword">password?</Link>
                         </p>
                     </div>
                 </form>

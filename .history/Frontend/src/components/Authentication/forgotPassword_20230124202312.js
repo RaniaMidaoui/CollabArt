@@ -70,7 +70,7 @@ export default function ForgotPassword() {
                         </div>
                         <br />
                         <div className="link-primary">
-                            <Link to="/signin" >Go back!</Link>
+                            <Link to="/auth" >Go back!</Link>
                         </div>
                     </div>
                 </form>
