@@ -10,9 +10,6 @@ import Footer from "./components/Footer/Footer";
 import Auth from "./components/Authentication/Auth";
 import ForgotPassword from "./components/Authentication/forgotPassword";
 import ResetPasswordForm from "./components/Authentication/resetPassword";
-import { Signin } from "./components/Authentication/signin";
-import { Singup } from "./components/Authentication/signup";
-import DefaultPage from "./components/defaultPage";
 
 const App = () => {
   const [hamActive, setHamActive] = useState(false);
@@ -21,13 +18,17 @@ const App = () => {
     <div className="App">
         <BrowserRouter>
         <Routes>
-            <Route path="/" element={<DefaultPage />} />
-            <Route path="/signin" element={<Signin />} />
-            <Route path="/signup" element={<Singup />} />
+            <Route path="/signin" element={<Auth />} />
+            <Route path="/signup" element={<Auth />} />
             <Route path='/forgotpassword' element={<ForgotPassword />} /> 
             <Route path="/reset/:userId/:token" element={<ResetPasswordForm/>} />
         </Routes>
       </BrowserRouter>
+      <Navbar hamActive={hamActive} setHamActive={setHamActive} />
+      <NavbarResponsive hamActive={hamActive} />
+      <Hero />
+      <Features />
+      <Footer />
     </div>
   );
 };
