@@ -40,7 +40,13 @@ const NavbarHome = ({ hamActive, setHamActive }) => {
           </div>
           <div>
             <a href="/">
-              <button className={styles.signup}>Logout</button>
+              <button className={styles.signup} onClick={() => {
+                const confirmBox = window.confirm(
+                  "Are you sure you want to logout?"
+                )
+                if (confirmBox === true) {
+                  handleDeleteCrumb(bookmark)
+                }}}>Logout</button>
             </a>
           </div>
         </div>
