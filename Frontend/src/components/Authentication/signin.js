@@ -84,6 +84,9 @@ export function Signin(props) {
                                 }
                             </button>
                         </div>
+                        <p className="link-inv">
+                            <Link to="/home">-</Link>
+                        </p>
                         <p className="link-primary">
                             <Link to="/forgotpassword">Forgot password?</Link>
                         </p>
