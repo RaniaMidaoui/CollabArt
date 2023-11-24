@@ -16,7 +16,7 @@ export const features = [
     image: img2,
   },
   {
-    feature: "Lear at your own pace",
+    feature: "Learn at your own pace",
     description:
       "You can learn whenever you want and will be provided with help as soon as our instructors can be available.",
     image: img3,

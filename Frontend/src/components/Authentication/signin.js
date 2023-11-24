@@ -53,7 +53,6 @@ export function Signin(props) {
                         <br></br>
                         <br></br>
                         <div className="form-group mt-3">
-                            <label>Email address:  </label>
                             <input
                                 type="email"
                                 name="email"
@@ -64,7 +63,6 @@ export function Signin(props) {
                             />
                         </div>
                         <div className="form-group mt-3">
-                            <label>Password:  </label>
                             <input
                                 type="password"
                                 name="password"

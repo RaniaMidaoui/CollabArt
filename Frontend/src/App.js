@@ -14,12 +14,18 @@ import Modules from "./components/Learn/modules";
 import Courses from "./components/Learn/courses";
 import Help from "./components/Learn/help";
 
+import { MantineProvider } from '@mantine/core';
+
 const App = () => {
   const [hamActive, setHamActive] = useState(false);
 
   return (
-    <div className="App">
-        <BrowserRouter>
+    <MantineProvider
+    withGlobalStyles
+    withNormalizeCSS
+    theme={{colorScheme: "light"}}
+    >
+      <BrowserRouter>
         <Routes>
             <Route path="/" element={<DefaultPage />} />
             <Route path="/home" element={<HomePage />} />
@@ -33,7 +39,8 @@ const App = () => {
             <Route path="/help" element={<Help />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </MantineProvider>
+    
   );
 };
 

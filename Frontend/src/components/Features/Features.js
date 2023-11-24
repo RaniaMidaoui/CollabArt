@@ -30,7 +30,7 @@ const Features = () => {
         </div>
       </div>
       <a>
-        <button className={styles.Btn}>Start learning</button>
+        <button className={styles.Btn}>Start Learning!</button>
       </a>
     </div>
   );

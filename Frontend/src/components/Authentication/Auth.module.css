@@ -1,0 +1,28 @@
+.wrapper {
+  min-height: 900px;
+  background-size: cover;
+  background-image:
+    url("background.jpg");
+}
+
+  .form {
+    border-right: 1px solid var(--mantine-color-gray-3);
+    min-height: 900;
+    max-width: 450;
+    padding-top: 80;
+
+    @media (max-width: 750 px): {
+      maxWidth: 100%;
+    }
+  }
+
+  .title {
+    color: var(--mantine-color-dark);
+  }
+
+  .logo {
+    width: 120;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

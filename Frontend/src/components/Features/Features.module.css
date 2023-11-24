@@ -10,7 +10,8 @@
 
 .featuresListWrapper {
   width: 100%;
-  overflow: auto;
+  overflow: none;
+  padding-bottom: 80px;
 }
 ::-webkit-scrollbar {
   display: none;

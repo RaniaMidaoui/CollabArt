@@ -58,7 +58,7 @@ label {
 #zero-state:before {
   display: -webkit-box;
   margin-bottom: 1rem ;
-  content: url('C:\Users\hp\Downloads\CollabArt-master\CollabArt-master\Frontend\public\logo.png');
+  content: url('../public/logo.png');
 }
 
 #zero-links {
