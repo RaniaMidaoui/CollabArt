@@ -35,7 +35,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
         if (isBlockListed) {
           done(new UnauthorizedException());
         } else {
-          done(null, process.env.JWT_SECRET);
+          done(null, "collabart");
         }
       },
     });

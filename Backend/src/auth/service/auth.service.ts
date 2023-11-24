@@ -42,7 +42,7 @@ export class AuthService {
         ...dto,
         password: hashedPassword,
         salt,
-        isActive: false,
+        isActive: true,
       });
       console.log(user);
 

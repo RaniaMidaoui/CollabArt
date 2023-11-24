@@ -14,10 +14,10 @@
 .Auth-form {
   width: 420px;
   box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 8px;
   background-color: white;
 }
@@ -58,7 +58,7 @@ label {
 #zero-state:before {
   display: -webkit-box;
   margin-bottom: 1rem ;
-  content: url('../public/logo.png');
+  content: url('/logo.png');
 }
 
 #zero-links {
@@ -111,8 +111,6 @@ nav ul li {
   position: relative;
   width: 100%;
   height: 100%;
-  margin: 50px auto;
-  padding: 50px 0 0;
   box-sizing: border-box;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -134,45 +132,6 @@ nav ul li {
   margin-bottom: 50px;
   background-color: #b9d0ca;
 }
-.Courses .card .card_img {
-  margin-top: 5vw;
-}
-.Courses .card .card_img img {
-  width: 200px;
-}
-.Courses .card .card_header {
-  flex-direction: column;
-  color: white;
-  margin: 25px 0;
-}
-.Courses .card .card_header h2 {
-  font-size: 35px;
-  color: #836d65;
-}
-.Courses .card .card_header p {
-  font-size: 18px;
-  text-align: center;
-  color: #91827d;
-  margin: 8px 0;
-}
-.Courses .card .card_header .price {
-  font-size: 25px;
-  color: cadetblue;
-}
-.Courses .card .card_header .price span {
-  font-size: 15px;
-  display: inline-block;
-  vertical-align: top;
-}
-.Courses .card:hover {
-  background-color: #7cc7b8;
-  transform: scale(1.0);
-  cursor: pointer;
-}
-.Courses .card:hover .btn {
-  background-color: burlywood;
-  color: white;
-}
 
 .btn {
   padding: 0.7rem 1.1rem;
@@ -191,3 +150,21 @@ nav ul li {
   cursor: pointer;
   color: white;
 }
+
+@keyframes spinner-border {
+  to { transform: rotate(360deg); }
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border .75s linear infinite;
+  animation: spinner-border .75s linear infinite;
+}
+
+
