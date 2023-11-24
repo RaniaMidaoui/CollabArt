@@ -168,3 +168,9 @@ nav ul li {
 }
 
 
+.all-page-container {
+  height: 100%;
+  width: 100%;
+  max-height: 500px;
+  overflow: auto;
+}

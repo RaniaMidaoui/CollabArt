@@ -1,48 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 
-.block {
-    width: 320px;
-    height: 160px;
-    background: white;
-    border-radius: 9px;
-    box-shadow: 0 10px 25px rgba(124, 130, 141, 0.2);
-    cursor: pointer;
-    transition: all 0.25s ease-out;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  @media (max-width: 575.9px) {
-    .block {
-      width: 300px;
-    }
-  }
-  .block .heart-icon {
-    user-select: none;
-    position: absolute;
-    left: 20%;
-    top: 53%;
-    transform: translate(-20%, -50%);
-    fill: transparent;
-    transition: transform 0.25s ease-out;
-    transform-origin: 50% 50%;
-  }
-  
-  /* initial state of the like heart button */
-  .block .heart-icon .fill-color-shape {
-    fill: transparent;
-  }
-  .block .heart-icon.isLiked {
-    filter: drop-shadow(0 3px 5px #c44133);
-  }
-  .block .heart-icon.isLiked .fill-color-shape {
-    transition: fill 0.5s linear;
-    fill: #e74c3c;
-  }
-  .block .heart-icon:hover {
-    transform: translate(-20%, calc(-50% - 3px)) scale(1.03);
-  }
   
   .wrapper {
     padding-top: 50px;
