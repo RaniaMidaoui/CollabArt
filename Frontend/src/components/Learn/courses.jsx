@@ -3,6 +3,8 @@ import { Document, Page, pdfjs } from "react-pdf";
 import Navbar from "../Navbar/Navbar";
 import NavbarResponsive from "../NavbarResponsive/NavbarResponsive";
 import Footer from "../Footer/Footer";
+import CommentsBox from "./comments";
+import { Comment } from "./comments";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -23,9 +25,6 @@ const PreviewPdf = () => {
 {Array.from(new Array(numberPages), (el, index) => (
         <Page key={`page_${index + 1}`} pageNumber={index + 1} />
       ))}        </Document>
-        <div>
-          <p>Pages: {numberPages}</p>
-        </div>
       </>
     );
 };
@@ -64,17 +63,24 @@ useEffect(() => {
             <Navbar hamActive={hamActive} setHamActive={setHamActive} />
             <NavbarResponsive hamActive={hamActive} />
             <div className="flex gap-2 w-full">
-              <div className="w-1/3 pl-40 py-10">
+              <div className="w-6/12 pl-20 -mr-40 pt-5">
                   <h1 className="text-xl">Pottery Workshop</h1>
                   <p>Module 2</p>
-                  <small>Sheet</small>
-                  <div className="w-full bg-gray-200 rounded-full h-2.5">
+                  <small>Reading Task</small>
+                  <div className="w-11/12 bg-gray-200 rounded-full h-2.5 mb-3">
                     <div className="bg-gray-600 h-2.5 rounded-full" style={{width: percentage+"%"}}></div>
                   </div>
-                  <br/>
                   <button type="button" className="w-full flex items-center justify-center px-5 py-2 text-sm text-gray-900 transition-colors duration-200 bg-gray-200 hover:bg-gray-7   00 border-gray-700 rounded-lg gap-x-2 sm:w-auto">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                    <span>Next Module</span>
                 </button>
+                <div className="h-[30vh] overflow-y-auto w-11/12 flex-col gap-1 mt-3">
+                <Comment commenter="Adam Lahbib" datetime="Nov 21, 2023" content="This is a comment." />
+                <Comment commenter="Rania Midaoui" datetime="Nov 22, 2023" content="This is a comment 2" />
+                <Comment commenter="Oumayma Boutaleb" datetime="Nov 23, 2023" content="This is a comment 3" />
+                <Comment commenter="Nadia Frikha" datetime="Nov 23, 2023" content="This is a comment 4" />
+                <Comment commenter="Nadia Frikha" datetime="Nov 23, 2023" content="This is a comment 4" />
+                </div>
+                <CommentsBox/>
               </div>
               <div id="scrollArea" className="all-page-container w-2/3 ml-40">
                 <PreviewPdf />
