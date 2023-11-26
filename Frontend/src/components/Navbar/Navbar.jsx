@@ -38,6 +38,9 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <a href={isAuthenticated() ? "/help" : "/signin"}  className={`${styles.nav} center`}>
               Help
             </a>
+            <a href={isAuthenticated() ? "/marketplace" : "/signin"}  className={`${styles.nav} center`}>
+              Marketplace
+            </a>
           </div>
           <div>
             {

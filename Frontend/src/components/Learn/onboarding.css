@@ -1,0 +1,8 @@
+.opacity-75 {
+    opacity: 0.75;
+    transition: opacity 0.3s ease-in-out; /* Adjust the duration as needed */
+  }
+  
+  .peer-checked {
+    opacity: 1;
+  }

@@ -44,7 +44,7 @@ export function Signin(props) {
                 setHasError({ error: true, message: 'Incorrect email address  or password.' });
             }
         }).finally(() => {
-            window.location.href = "/home";
+            window.location.href = "/onboarding";
         });
     };
 
