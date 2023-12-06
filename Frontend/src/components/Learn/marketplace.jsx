@@ -35,8 +35,13 @@ export default function Marketplace() {
 	</div>
 	<div className="grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-6 gap-y-12 w-full mt-6">
 		<Product name="Vintage Rose Vase" store="VinMart" price="59 TND" image="https://m.media-amazon.com/images/I/61IUyiIFNGL._AC_UF894,1000_QL80_.jpg"/>
-        <Product name="Vintage Rose Vase" store="VinMart" price="59 TND" image="https://m.media-amazon.com/images/I/61IUyiIFNGL._AC_UF894,1000_QL80_.jpg"/>
-
+        <Product name="Turkish Clay Bowl" store="Turkisart" price="29 TND" image="https://i.etsystatic.com/11439011/r/il/994966/3490599183/il_570xN.3490599183_cqn3.jpg"/>
+		<Product name="Tunisian Carpet" store="Jasmins" price="69 TND" image="https://i.etsystatic.com/20331717/r/il/16b990/4602360218/il_300x300.4602360218_lzzh.jpg" />
+		<Product name="Small Basket" store="Jasmins" price="49 TND" image="https://mljcpq5dyf4t.i.optimole.com/cb:KXiG.26301/w:595/h:595/q:mauto/ig:avif/f:best/https://tunisia-market.com/wp-content/uploads/2023/01/9E15B821-3BA0-4530-BA9E-25C616FBD182.jpeg" />
+		<Product name="Homemade Clay Drum" store="TunisianArt" price="39 TND" image="https://thumbs.dreamstime.com/b/congo-drum-25353825.jpg" />
+		<Product name="Jebba" store="TunisianArt" price="109 TND" image="https://zaherkammoun.com/wp-content/uploads/2021/06/jebba-Testour-scaled.jpg" />
+		<Product name="Vivid Cermaics" store="VinMart" price="89 TND" image="https://ik.imagekit.io/theartling/prod/original_images/Screenshot_2019-07-25_at_1.55.39_PM.png?tr=w-825,h-600,c-at_max,bg-FFFFFF" /> 
+		<Product name="Moroccan Cushions" store="MoroccanArt" price="39 TND" image="https://lostlover.com/cdn/shop/products/VintageMoroccanCushion-DesertSun1.jpg?v=1621921336" />
 	</div>
     </div>
     <Footer/>
